@@ -4,11 +4,11 @@ cask "jet-pilot" do
   os macos: "dmg", linux: "AppImage"
 
   # Bumped automatically by unxsist/jet-pilot's release workflow.
-  version "1.37.0"
-  sha256 arm:          "b09aa9956831489b0886a6f9d18ce23bd94ae9b813abea7dbc9cd9d4bdae1798",
-         intel:        "a91d6a7d0060d6435566033647c5e7f4be1bc018ac9e99a47b1f4a93bb003cbe",
-         arm64_linux:  "f8132ffa781406f16fed7928a9754b6943ffe4e3b2b7a46710edc57628e3ddf5",
-         x86_64_linux: "e76c0d6be72d7d39689284a5cf2e56e71938af78c447370dddedccd4fd5f16e5"
+  version "1.38.0"
+  sha256 arm:          "c2ba6ae1542761838aa8f3a37a9c828af1398f44d40bbcfdd3bce256ccdafe73",
+         intel:        "bca755141e462153ffb1bfcf77651c2d8320986d592cbbad27c8dc57b3a430c0",
+         arm64_linux:  "29127c7a998cb3863ddb307ce7f5a96247bb2bbf989bec78b7bba521ba044291",
+         x86_64_linux: "c9d1203cbe11d3381c7f706d9b89015e42239ae9c30ea64d6f4e471eede28e3f"
 
   url "https://github.com/unxsist/jet-pilot/releases/download/v#{version}/JET.Pilot_#{version}_#{arch}.#{os}"
   name "JET Pilot"
