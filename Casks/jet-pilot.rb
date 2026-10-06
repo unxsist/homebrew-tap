@@ -30,10 +30,10 @@ cask "jet-pilot" do
     # JET Pilot is free and open source and not notarized by Apple, so
     # Gatekeeper would refuse to open the quarantined download ("is damaged
     # and can't be opened"). Clear the quarantine flag on the installed app.
-    postflight do
-      system_command "/usr/bin/xattr",
-                     args:         ["-dr", "com.apple.quarantine", "#{appdir}/JET Pilot.app"],
-                     must_succeed: false
+    postflight_steps do
+      run "/usr/bin/xattr",
+          args:         ["-dr", "com.apple.quarantine", "{{appdir}}/JET Pilot.app"],
+          must_succeed: false
     end
 
     zap trash: [
